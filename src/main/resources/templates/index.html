@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css} "/>
+    <title>API Aggregator</title>
+  </head>
+  <body>
+  		
+  		<div class="container d-flex" style="height:400px;">
+  		   <div class="row d-flex justify-content-center col-md-12 align-items-center">
+  		      <form action="/connect" method="POST" class="col-md-5">
+			         <div class="form-group col-md-12" > 
+			            <label for="mail">Email:</label>
+			            <input type="text" name="mail" id="mail" placeholder="Entrer votre mail" class="form-control" >		         
+			         </div>			        
+			       <div class="row d-flex justify-content-center">
+			       	   <button type="submit" class="btn btn-outline-primary">Se connecter</button>
+			       </div>
+       
+               </form>
+  		</div>
+  		
+  		</div>
+      
+       
+       
+       <script th:src="@{/webjars/jquery/3.0.0/jquery.min.js}"></script>
+	   <script th:src="@{/webjars/popper.js/1.12.9-1/umd/popper.min.js}"></script>
+	   <script th:src="@{/webjars/bootstrap/4.0.0-2/js/bootstrap.min.js}"></script>
+  </body>
+</html>
